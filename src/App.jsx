@@ -1,5 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { AlertProvider } from "./context/alertContext";
+import Header from "./components/Header";
 
 
 function App() {

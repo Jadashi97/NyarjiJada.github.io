@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -68,10 +68,53 @@ const Header = () => {
 
 
     return (
-        <div>
-        
-        </div>
-    )
-}
+        <Box
+            position={"fixed"}
+            top={0}
+            left={0}
+            right={0}
+            translateY={0}
+            transitionProperty="transform"
+            transitionDuration=".3s"
+            transitionTimingFunction={"ease-in-out"}
+            backgroundColor="#18181b"
+            ref={headerRef}
+        >
+            <Box>
+                <HStack
+                    px={16}
+                    py={4}
+                    justifyContent="space-between"
+                    alignContent={"center"}
+                >
+                    <nav>
+                        <HStack spacing={8}>
+                            {socials.map(({icon, url})=>{
+                                <a
+                                    key={url}
+                                    href={url}
+                                    target="_blank"
+                                    ref="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon icon={icon} size="2x" key={url}/>
+                                </a>
+                            })}
+                        </HStack>
+                    </nav>
+                    <nav>
+                        <HStack spacing={8}>
+                            <a href='#projects' onClick={handleClick("Projects")}>
+                                Projects
+                            </a>
+                            <a href='#contactme' onClick={handleClick("contactme")}>
+                                Contact Me
+                            </a>
+                        </HStack>
+                    </nav>
+                </HStack>
+            </Box>                
+        </Box>
+    );
+};
 
-export default Header
+export default Header;
