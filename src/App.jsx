@@ -3,7 +3,7 @@ import { AlertProvider } from "./context/alertContext";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LandingSection from "./components/LandingSection";
-
+import ProjectSection from "./components/ProjectSection";
 
 function App() {
 
@@ -13,6 +13,7 @@ function App() {
         <main>
           <Header/>
           <LandingSection/>
+          <ProjectSection/>
           <Footer/>
         </main>
       </AlertProvider>
