@@ -5,7 +5,7 @@ import myAvatar from "../assets/myAvatar.jpeg";
 
 const greeting = "Hello, I am Nyarji D Jada";
 const bio1 = "A Frontend Developer";
-const bio2 = "Specialized in  React";
+const bio2 = "Specialized in  React & React Native";
 
 
 const LandingSection = ()=> {
@@ -31,7 +31,7 @@ const LandingSection = ()=> {
                 <Heading as="h1" size="3xl" noOfLines={1}>
                     {bio1}
                 </Heading>
-                <Heading as="h1" size="3xl" noOfLines={1}>
+                <Heading as="h2" size="2xl" noOfLines={1}>
                     {bio2}
                 </Heading>
             </VStack>
