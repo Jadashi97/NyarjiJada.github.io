@@ -1,29 +1,33 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading} from "@chakra-ui/react";
+import { Box, Heading, Image} from "@chakra-ui/react";
 import Card from "./Card";
+import giving from "../assets/giving.jpg";
+import afrifood from "../assets/afrifood.png";
+import chillies from "../assets/chillies.png";
+import cover from "../assets/cover.png";
 
 const projects = [
     {
         title: "Expense Tracker",
         description: "A handy tracker to help me track my everyDay expenses. <br/> built using React for the frontend and nodejs for the backend",
 
-        // getImageScr: () => require("../assets/giving.jpeg")
+        getImageSrc: <Image src={giving} size="2xl"/>
     },
     {
         title: "World Volcano Tracker",
         description: "Used React and integrated the Nasa API to show erupting volcanoes around the world",
-        // getImageScr: () => require("../assets/afrifood.png")
+        getImageSrc: <Image src={chillies} size="2xl"/>
     },
     {
         title: "Restaurant App",
         description: "Built a Mobile restaurant App using React Native for customer to easily look at the menu",
-    //     getImageScr: () => require("../assets/chillies.png")
+        getImageSrc: <Image src={afrifood} size="2xl"/>
     },
     {
         title: "Church Website",
         description: "Built a Church Website for my community Church So we can show case any happening events",
-        // getImageScr: () => require("../assets/cover.png")
+        getImageSrc: <Image src={cover} size="2xl"/>
     }
 ]
 
@@ -48,11 +52,11 @@ const ProjectSection = () => {
             >
                 {projects.map((project)=> {
                     <Card
-                    key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    url="https://github.com/Jadashi97"
-                    // imageSrc={project.getImageScr()}
+                        key={project.title}
+                        title={project.title}
+                        description={project.description}
+                        url="https://github.com/Jadashi97"
+                        imageSrc={project.getImageSrc}
                     />
                 })}
             </Box>
