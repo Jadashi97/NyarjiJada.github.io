@@ -55,6 +55,7 @@ const Header = () => {
       } 
     }, []); 
     
+    // this allows for the smooth scroll of the the page to the selected page on the site
     const handleClick = (anchor) => () => { 
       const id = `${anchor}-section`; 
       const element = document.getElementById(id); 

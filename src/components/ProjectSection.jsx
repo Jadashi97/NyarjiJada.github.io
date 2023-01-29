@@ -1,16 +1,12 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading, Image} from "@chakra-ui/react";
+import { Box, Heading} from "@chakra-ui/react";
 import Card from "./Card";
-import giving from "../assets/giving.jpg";
-import afrifood from "../assets/afrifood.png";
-import chillies from "../assets/chillies.png";
-import cover from "../assets/cover.png";
 
 const projects = [
     {
         title: "Expense Tracker",
-        description: "A handy tracker to help me track my everyDay expenses. <br/> built using React for the frontend and nodejs for the backend",
+        description: "A handy tracker to help me track my everyDay expenses.Built using React for the frontend and nodejs for the backend",
         getImageSrc:() => ("../assets/myAvatar.jpeg"),
     },
     {
