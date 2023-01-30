@@ -18,7 +18,7 @@ export default function Alert() {
 
     return (
         <div>
-        
+            <p>This is a going to be the alert page for the main page!</p>
         </div>
     )
 }
