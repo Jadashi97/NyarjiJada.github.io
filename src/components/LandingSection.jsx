@@ -1,11 +1,12 @@
 import React from 'react';
 import { Avatar, Heading, VStack } from '@chakra-ui/react';
 import FullScreenSection from "./FullScreenSection";
-import myAvatar from "../assets/myAvatar.jpeg";
+// import myAvatar from "../assets/myAvatar.jpeg";
+import AvatarPic from "../assets/AvatarPic.jpeg";
 
-const greeting = "Hello, I am Nyarji D Jada";
-const bio1 = "A Frontend Developer";
-const bio2 = "Specialized in  React & React Native";
+const greeting = "Hello, I am Nyarji Daniel Jada";
+const bio1 = "A FullStack Developer";
+const bio2 = "Specialized in Javascript,React & React Native, Express";
 
 
 const LandingSection = ()=> {
@@ -19,7 +20,7 @@ const LandingSection = ()=> {
         <VStack spacing={16}>
             <VStack spacing={4} alignItems="center">
                 <Avatar
-                    src={myAvatar}
+                    src={AvatarPic}
                     size="2xl"
                     name='lokose'
                 />
@@ -31,7 +32,7 @@ const LandingSection = ()=> {
                 <Heading as="h1" size="3xl" noOfLines={1}>
                     {bio1}
                 </Heading>
-                <Heading as="h2" size="2xl" noOfLines={1}>
+                <Heading as="h2" size="2xl" noOfLines={2}>
                     {bio2}
                 </Heading>
             </VStack>

@@ -7,22 +7,22 @@ const projects = [
     {
         title: "Expense Tracker",
         description: "A handy tracker to help me track my everyDay expenses.Built using React for the frontend and nodejs for the backend",
-        getImageSrc: () => ("src/assets/lokose-passport-size.jpg")
+        getImageSrc: () => ("src/assets/expensetracker.png")
     },
     {
         title: "World Volcano Tracker",
         description: "Used React and integrated the Nasa API to show erupting volcanoes around the world",
-        getImageSrc:  () => ("src/assets/myAvatar.jpeg"),
+        getImageSrc:  () => ("src/assets/volcanoTracker.png"),
     },
     {
         title: "Restaurant App",
         description: "Built a Mobile restaurant App using React Native for customer to easily look at the menu",
-        getImageSrc: () => ("src/assets/chillies.png"),
+        getImageSrc: () => ("src/assets/afrifood.png"),
     },
     {
         title: "Church Website",
         description: "Built a Church Website for my community Church So we can show case any happening events",
-        getImageSrc: () => ("src/assets/afrifood.png"),
+        getImageSrc: () => ("src/assets/churchcPic.png"),
     }
 ]
 

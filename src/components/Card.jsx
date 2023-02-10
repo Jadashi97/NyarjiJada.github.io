@@ -22,7 +22,7 @@ const Card = ({ title, description, imageSrc }) => {
                     {description}
                 </Text>
                 <HStack spacing={2} alignItems="center">
-                    <p>See more</p>
+                    <p><a href="https://github.com/Jadashi97?tab=overview&from=2023-02-01&to=2023-02-10">See more</a></p>
                     <FontAwesomeIcon icon={faArrowRight} size="1x"/>
                 </HStack>
             </VStack>
