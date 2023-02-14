@@ -46,9 +46,10 @@ const ContactMeSection = () => {
 
     return(
         <FullScreenSection
-            isDarkBackground
             background="#512DA8"
-            py={16}
+            isDarkBackground
+            p={16}
+            alignItems="flext-start"
             spacing={8}
         >
             <VStack w="1024px" p={32} alignItems="flex-start">
