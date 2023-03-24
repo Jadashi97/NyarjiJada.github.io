@@ -4,6 +4,7 @@ import { useAlertContext } from "../context/alertContext";
 import { useFormik } from "formik"; //npm package - helps to easily create forms
 import * as Yup from 'yup'; //npm package-  this for form validation
 import FullScreenSection from "./FullScreenSection";
+import { useMediaQuery } from '@chakra-ui/react';
 import { Heading, VStack, Box, FormControl, FormLabel, Input, FormErrorMessage, Select, Textarea, Button } from "@chakra-ui/react";
 
 
@@ -14,6 +15,8 @@ import { Heading, VStack, Box, FormControl, FormLabel, Input, FormErrorMessage, 
 const ContactMeSection = () => {
     const {isLoading, response, submit} = useSubmit();
     const { onOpen } = useAlertContext();
+
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");  // for responsive design
 
     // we use formik to set up the input form
     const formik = useFormik({
@@ -45,20 +48,29 @@ const ContactMeSection = () => {
     }, [response])
 
     return(
-        <FullScreenSection
+        <VStack
+            alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
+            mb={isNotSmallerScreen ? "0" : "12"} 
+            borderRadius='full'
+            backgroundColor="transparent" boxShadow="full"
             background="#512DA8"
             isDarkBackground
             p={16}
-            alignItems="flext-start"
+            // alignItems="flext-start"
             spacing={8}
         >
-            <VStack w="1024px" p={32} alignItems="flex-start">
-                <Heading as="h1" id="contactme-section">
+            <VStack w="1024px" p={28} //alignItems="flex-start"
+            >
+                <Heading as="h1" id="contactme-section" color={"white"}>
                     Contact me
                 </Heading>
-                <Box p={6} rounded="md" w="100%">
+                <Box p={6} rounded="md" //w="100%"
+
+                    alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
+                    mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
+                >
                     <form onSubmit={formik.handleSubmit}>
-                        <VStack spacing={4}>
+                        <VStack spacing={4} color={"white"}>
                             <FormControl isInvalid={!!formik.errors.firstName && formik.touched.firstName}>
                                 <FormLabel htmlFor="firstName">Name</FormLabel>  
                                 <Input
@@ -96,14 +108,14 @@ const ContactMeSection = () => {
                                 />
                                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
                             </FormControl>
-                            <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
+                            <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading} mt={4}>
                                 Submit
                             </Button>   
                         </VStack>
                     </form>
                 </Box>
             </VStack>
-        </FullScreenSection>
+        </VStack>
     );
 };
 

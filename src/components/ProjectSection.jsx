@@ -8,22 +8,28 @@ const projects = [
         title: "Expense Tracker",
         description: "A handy tracker to help me track my everyDay expenses.Built using React for the frontend and nodejs for the backend",
         getImageSrc: () => ("src/assets/expensetracker.jpeg"),
+        getlinkSrc: () => ("https://github.com/Jadashi97/personal-Expense-tracker")
+
     },
     {
         title: "World Volcano Tracker",
-        description: "Used React and integrated the Nasa API to show erupting volcanoes around the world",
+        description: "Used React and integrated the Nasa API to show and Track any erupting volcanoes around the world",
         getImageSrc:  () => ("src/assets/volcanoTracker.jpeg"),
+        getlinkSrc: () => ("https://github.com/Jadashi97/world-volcano-tracker")
+
     },
     {
         title: "Restaurant App",
         description: "Built a Mobile restaurant App using React Native for customer to easily look at the menu",
         getImageSrc: () => ("src/assets/afrifood.jpeg"),
+        getlinkSrc: () => ("https://github.com/Jadashi97/Restaurant-app")
+
     },
     {
         title: "Church Website",
-        description: "Built a Church Website for my community Church So we can show case any happening events",
+        description: "Built My Community Church Website so we can communicate and worship better and together as a community",
         getImageSrc: () => ("src/assets/churchcPic.jpeg"),
-        href: () => ("https://southsudanchurch.com/")
+        getlinkSrc: () => ("https://southsudanchurch.com/")
     }
 ]
 
@@ -51,7 +57,7 @@ const ProjectSection = () => {
                         key={project.title} 
                         title={project.title} 
                         description={project.description} 
-                        href= {"https://southsudanchurch.com/"}
+                        linkSrc= {project.getlinkSrc()}
                         imageSrc={project.getImageSrc()} 
                     /> 
                 ))} 

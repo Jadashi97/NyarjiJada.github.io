@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { useMediaQuery } from '@chakra-ui/react';
+
+
 import {
     faGithub,
     faLinkedin,
@@ -31,6 +34,8 @@ const socials = [
 
 const Header = () => { 
     const headerRef = useRef(null); 
+
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");  // for responsive design
     
     useEffect(() => { 
       let prevScrollPos = window.scrollY; 
@@ -78,6 +83,8 @@ const Header = () => {
         transitionTimingFunction="ease-in-out" 
         backgroundColor="#18181b" 
         ref={headerRef} 
+        mt={isNotSmallerScreen ? "0" : "12"}
+            mb={isNotSmallerScreen ? "0" : "12"} 
       > 
         <Box color="white" maxWidth="1280px" margin="0 auto"> 
           <HStack 

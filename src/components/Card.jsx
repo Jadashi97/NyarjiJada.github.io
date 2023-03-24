@@ -1,15 +1,25 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Heading, HStack, VStack, Image, Text } from "@chakra-ui/react";
+import { Heading, HStack, VStack, Image, Text, Link } from "@chakra-ui/react";
+import { useMediaQuery } from '@chakra-ui/react';
 
-const Card = ({ title, description, imageSrc }) => {
+
+const Card = ({ title, description, imageSrc, linkSrc }) => {
+
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+
     return(
         <VStack
             color="black"
             backgroundColor="white"
+            boxShadow="lg"
             cursor="pointer"
             borderRadius="xl"
+            alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
+            mb={isNotSmallerScreen ? "0" : "12"} 
+                // backgroundColor="transparent" boxShadow="lg"
+                // boxSize="250px"
         >
             <Image borderRadius="xl" src={imageSrc} alt={title}/>
             <VStack spacing={4} p={4} alignItems="flex-start">
@@ -22,8 +32,7 @@ const Card = ({ title, description, imageSrc }) => {
                     {description}
                 </Text>
                 <HStack spacing={2} alignItems="center">
-                    <p><a href="https://github.com/Jadashi97?tab=overview&from=2023-02-01&to=2023-02-10">See more</a></p>
-                    <FontAwesomeIcon icon={faArrowRight} size="1x"/>
+                    <Link color='teal.300' href={linkSrc} >See More</Link>
                 </HStack>
             </VStack>
         </VStack>
