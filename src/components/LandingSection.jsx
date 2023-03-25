@@ -1,10 +1,11 @@
 import React from 'react';
-import { Image, Avatar, Heading, VStack, Text} from '@chakra-ui/react';
+import { Image, Button, Heading, VStack, Text} from '@chakra-ui/react';
 import FullScreenSection from "./FullScreenSection";
 import { useMediaQuery } from '@chakra-ui/react';
 // import myAvatar from "../assets/myAvatar.jpeg";
 import AvatarPic from "../assets/AvatarPic.jpeg";
 import MyImage from "../assets/MyImage.jpeg";
+import { AspectRatio } from '@chakra-ui/react';
 
 const greeting = "Hi, I am Nyarji Daniel Jada";
 const bio1 = "A Proficient FullStack/FrontEnd Developer ";
@@ -27,7 +28,7 @@ const LandingSection = ()=> {
             <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                 mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
                 backgroundColor="transparent" boxShadow="lg"
-                boxSize="250px" src= {MyImage} 
+                boxSize="300px" src= {MyImage} 
             />
 
                 <Heading fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>
@@ -42,6 +43,9 @@ const LandingSection = ()=> {
                     {bio2}
                 </Text>
             </VStack>
+            <Button mt={8} colorScheme="blue" onClick={() =>
+                        window.open("https://www.linkedin.com/in/nyarji-d-jada-182bb8177/")
+                    }>Hire Me / Let's Link</Button>
         </VStack>
        </FullScreenSection>
     );

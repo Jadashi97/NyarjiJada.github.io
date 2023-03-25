@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { useMediaQuery } from '@chakra-ui/react';
+import { useColorMode, useMediaQuery } from '@chakra-ui/react';
+import { IconButton } from '@chakra-ui/react';
+import { FaSun, FaMoon, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 
 import {
@@ -33,9 +35,13 @@ const socials = [
 */ 
 
 const Header = () => { 
-    const headerRef = useRef(null); 
 
+    const headerRef = useRef(null); 
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");  // for responsive design
+    const {colorMode, toggleColorMode} = useColorMode();
+    const isDark = colorMode === "dark";
+
+
     
     useEffect(() => { 
       let prevScrollPos = window.scrollY; 
@@ -115,6 +121,7 @@ const Header = () => {
                 <a href="#contactme" onClick={handleClick("contactme")}> 
                   Contact Me 
                 </a> 
+                <IconButton ml={8} icon={isDark ? <FaSun/> : <FaMoon/>} isRound="true" onClick={toggleColorMode}/>
               </HStack> 
             </nav> 
           </HStack> 
