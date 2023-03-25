@@ -15,7 +15,7 @@ const Footer = () => {
             maxWidth="1024px"
             height={16}
         >
-            <p>Jadashi97 • © 2023</p>
+            <p>Jadashi97 • © 2023 || All Rights Reserved</p>
         </Flex>
       </footer>
     </Box>
