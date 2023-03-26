@@ -28,7 +28,7 @@ const LandingSection = ()=> {
             <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                 mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
                 backgroundColor="transparent" boxShadow="lg"
-                boxSize="300px" src= {MyImage} 
+                src= {MyImage} boxSize="200px"
             />
 
                 <Heading fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>

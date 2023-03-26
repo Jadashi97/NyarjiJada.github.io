@@ -6,7 +6,7 @@ import Icon from '@chakra-ui/icon';
 import { useMediaQuery } from '@chakra-ui/react';
 
 
-const Card = ({ title, description, myIcon, imageSrc, linkSrc }) => {
+const Card = ({ title, description, myIcon, imageSrc, linkSrc, }) => {
 
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
@@ -21,9 +21,10 @@ const Card = ({ title, description, myIcon, imageSrc, linkSrc }) => {
             mb={isNotSmallerScreen ? "0" : "12"} 
             py={"2.5rem"}
         >
-            <Image borderRadius="xl" src={imageSrc} alt={title}/>
-            <Icon color="white" p="4" as={myIcon} w="24" h="24"/>
+            {/* <Icon color="black" p="4" as={myIcon} w="24" h="24"/> */}
+            {/* <Image borderRadius="xl" src={imageSrc} alt={title}/> */}
             <VStack spacing={4} p={2} alignItems="center">
+                <p>{myIcon}</p>
                 <HStack justifyContent="space-between" alignItems="center">
                     <Heading as="h2" size="lg" alignItem="center">
                         {title}
