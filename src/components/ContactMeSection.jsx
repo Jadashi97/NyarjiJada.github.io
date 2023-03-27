@@ -64,7 +64,7 @@ const ContactMeSection = () => {
                 <Heading as="h1" id="contactme-section" color={"white"}>
                     Contact me
                 </Heading>
-                <Box p={8} rounded="md" //w="100%"
+                <Box p={8} //rounded="lg" w="100%"
 
                     alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                     mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
