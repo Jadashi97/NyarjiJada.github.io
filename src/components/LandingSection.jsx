@@ -4,12 +4,13 @@ import FullScreenSection from "./FullScreenSection";
 import { useMediaQuery } from '@chakra-ui/react';
 // import myAvatar from "../assets/myAvatar.jpeg";
 import AvatarPic from "../assets/AvatarPic.jpeg";
+import {DiJavascript1} from 'react-icons/di';
 import MyImage from "../assets/MyImage.jpeg";
 import { AspectRatio } from '@chakra-ui/react';
 
 const greeting = "Hi, I am Nyarji Daniel Jada";
 const bio1 = "A Proficient FullStack/FrontEnd Developer ";
-const bio2 = "Specialized in Javascript,React, React Native, NodeJs, Express, MongoDB, MySQL, WordPress";
+const bio2 = "Specialized in JavaScript,React, React Native, NodeJs, Express, MongoDB, MySQL, WordPress, Shopify";
 
 
 const LandingSection = ()=> {
