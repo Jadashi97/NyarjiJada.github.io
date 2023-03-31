@@ -8,9 +8,9 @@ import {DiJavascript1} from 'react-icons/di';
 import MyImage from "../assets/MyImage.jpeg";
 import { AspectRatio } from '@chakra-ui/react';
 
-const greeting = "Hi, I am Nyarji Daniel Jada";
+const greeting = "Hi 👋🏿!, I am Nyarji Daniel Jada";
 const bio1 = "A Proficient FullStack/FrontEnd Developer ";
-const bio2 = "Specialized in JavaScript,React, React Native, NodeJs, Express, MongoDB, MySQL, WordPress, Shopify";
+const bio2 = "Specialized in 👨🏾‍💻 ☕️ JavaScript,React, React Native, NodeJs, Express, MongoDB, MySQL, WordPress, Shopify";
 
 
 const LandingSection = ()=> {
@@ -40,7 +40,7 @@ const LandingSection = ()=> {
                 <Heading as="h5" size="2xl" noOfLines={4}>
                     {bio1}
                 </Heading>
-                <Text as="h1" size="5xl" noOfLines={2}>
+                <Text as="h2" size="5xl" noOfLines={3}>
                     {bio2}
                 </Text>
             </VStack>
