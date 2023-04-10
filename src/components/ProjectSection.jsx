@@ -5,6 +5,7 @@ import Card from "./Card";
 import { GiVolcano, GiTakeMyMoney } from "react-icons/gi";
 import { MdOutlineFoodBank } from "react-icons/md";
 import { BiChurch } from "react-icons/bi";
+import {FcCalculator} from "react-icons/fc";
 
 
 const projects = [
@@ -17,6 +18,13 @@ const projects = [
         // getImageSrc:{ExpenseTracker},
         getlinkSrc: () => ("https://github.com/Jadashi97/personal-Expense-tracker")
 
+    },
+    {
+        title: "Tip Calculator",
+        description: "Built a Tip calculator that you can use to split the bill equally among a group of friends. Click the Link and try it yourself",
+        myIcon: <FcCalculator color="Green" size={120}/>,
+        // getImageSrc: () => ("/churchcPic.jpeg"),
+        getlinkSrc: () => ("https://replit.com/@Jadashi97/Tip-Calculator")
     },
     {
         title: "World Volcano Tracker",
@@ -41,6 +49,7 @@ const projects = [
         // getImageSrc: () => ("/churchcPic.jpeg"),
         getlinkSrc: () => ("https://southsudanchurch.com/")
     }
+    
 ]
 
 

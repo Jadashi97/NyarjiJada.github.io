@@ -10,7 +10,7 @@ import { AspectRatio } from '@chakra-ui/react';
 
 const greeting = "Hi 👋🏿!, I am Nyarji Daniel Jada";
 const bio1 = "A Proficient FullStack/FrontEnd Developer ";
-const bio2 = "Specialized in 👨🏾‍💻 ☕️ JavaScript,React, React Native, NodeJs, Express, MongoDB, MySQL, WordPress, Shopify";
+const bio2 = "Specialized in 👨🏾‍💻 ☕️ JavaScript,React, React Native, NodeJs, Express, Git & GIthub, Firebase, Figma,  MongoDB, MySQL, WordPress, Shopify";
 
 
 const LandingSection = ()=> {
@@ -40,7 +40,7 @@ const LandingSection = ()=> {
                 <Heading as="h5" size="2xl" noOfLines={4}>
                     {bio1}
                 </Heading>
-                <Text as="h2" size="5xl" noOfLines={3}>
+                <Text as="h2" size="5xl" noOfLines={5}>
                     {bio2}
                 </Text>
             </VStack>
