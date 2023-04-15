@@ -10,12 +10,12 @@ import { AspectRatio } from '@chakra-ui/react';
 
 const greeting = "Hi 👋🏿!, I am Nyarji Daniel Jada";
 const bio1 = "A Proficient FullStack/FrontEnd Developer ";
-const bio2 = "Specialized in 👨🏾‍💻 ☕️ JavaScript,React, React Native, NodeJs, Express, Git & GIthub, Firebase, Figma,  MongoDB, MySQL, WordPress, Shopify";
+const bio2 = "Specialized in 👨🏾‍💻 ☕️ JavaScript, React, React Native, NodeJs, Express, Git & GIthub, Firebase, Figma,  MongoDB, MySQL, WordPress, Shopify";
 
 
 const LandingSection = ()=> {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:300px)");
 
     return(
        <FullScreenSection
@@ -32,7 +32,7 @@ const LandingSection = ()=> {
                 src= {MyImage} boxSize="200px"
             />
 
-                <Heading fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>
+                <Heading flex="1" fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>
                     {greeting}
                 </Heading>
             </VStack>

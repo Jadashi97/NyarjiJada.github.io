@@ -8,7 +8,7 @@ import { VStack, Flex, useMediaQuery} from "@chakra-ui/react";
 
 const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
 
-    // const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width: 300px)");
 
     return(
         <VStack

@@ -1,14 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Heading, HStack, VStack, Image, Text, Link } from "@chakra-ui/react";
+import { Heading, HStack, VStack, Button, Text, Link } from "@chakra-ui/react";
 import Icon from '@chakra-ui/icon';
 import { useMediaQuery } from '@chakra-ui/react';
 
 
 const Card = ({ title, description, myIcon, imageSrc, linkSrc, }) => {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:400px)");
 
     return(
         <VStack
@@ -35,7 +35,7 @@ const Card = ({ title, description, myIcon, imageSrc, linkSrc, }) => {
                 </Text>
             </VStack>
                 <HStack spacing={4} alignItems="center">
-                    <Link color='teal.900' href={linkSrc} alignItem="center" size="lg" >See More</Link>
+                    <Link color='teal.900' href={linkSrc} alignItem="center" size="lg" ><Button>See More</Button></Link>
                 </HStack>
         </VStack>
     );

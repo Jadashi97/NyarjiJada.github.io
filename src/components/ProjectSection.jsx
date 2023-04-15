@@ -60,7 +60,6 @@ const ProjectSection = () => {
             backgroundColor="#14532d"
             isDarkBackground 
             p={8}
-            alignItems="flex-start"
             spacing={8}
         >
             <Heading as="h1" id="projects-section" alignItems={"center"} >
@@ -68,7 +67,7 @@ const ProjectSection = () => {
             </Heading>
             <Box 
                 display="grid" 
-                gridTemplateColumns="repeat(2,minmax(2,1fr))" 
+                // gridTemplateColumns="repeat(1,minmax(4,2fr))" 
                 gridGap={10} 
             > 
                 {projects.map((project) => ( 
