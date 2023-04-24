@@ -27,14 +27,6 @@ const projects = [
         getlinkSrc: () => ("https://replit.com/@Jadashi97/Tip-Calculator")
     },
     {
-        title: "World Volcano Tracker",
-        description: "Used React and integrated the Nasa API to locate, find, show and Track any erupting volcanoes around the world",
-        myIcon: <GiVolcano color="red" size={120}/>,
-        // getImageSrc:  () => ("/volcanoTracker.jpeg"),
-        getlinkSrc: () => ("https://github.com/Jadashi97/world-volcano-tracker")
-
-    },
-    {
         title: "Restaurant App",
         description: "Built a Mobile restaurant App using React Native for customers to easily look at the menu and order easily",
         myIcon: <MdOutlineFoodBank color="silver" size={120}/>,

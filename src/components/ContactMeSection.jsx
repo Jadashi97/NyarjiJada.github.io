@@ -30,7 +30,10 @@ const ContactMeSection = () => {
             submit(" ", values);
         },
         validationSchema: Yup.object({ // validating forms
-            firstName: Yup.string().required("Required"),
+            firstName: Yup.string()
+                .required("Required")
+                .min(2, "Too Short!")
+                .max(50, "Too long!"),
             email: Yup.string().email("Invalid email address").required("Required"),
             comment: Yup.string()
             //  .min(10, "Must be atleast 10 characters")
@@ -41,7 +44,7 @@ const ContactMeSection = () => {
     useEffect(() => {
         if(response){
             onOpen(response.type, response.message);
-            if(response.type === 'succcess') {
+            if(response.type === 'success') {
                 formik.resetForm();
             }
         }
