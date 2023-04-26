@@ -7,7 +7,7 @@ const wait = (ms)=> new Promise((resolve) => setTimeout(resolve, ms));
  * It uses Math.random() to simulate a random success or failure, with 50% chance of each
  */
 
-const useSubmit = () => {
+const useSubmit = (url) => {
     const [isLoading, setLoading] = useState(false);
     const [response, setResponse] = useState(null);
 

@@ -20,14 +20,14 @@ const LandingSection = ()=> {
     return(
        <FullScreenSection
             justifyContent="center"
-            alignItems="center" 
+            alignItem="center" 
             isDarkBackground
             backgroundColor="#202730"
        >
         <VStack spacing={16}>
             <VStack spacing={4} alignItems="center">
-            <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
-                mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
+            <Image alignself="center" mt={isNotSmallerScreen ? "0" : "12"}
+                mb={isNotSmallerScreen ? "0" : "12"} borderradius='full'
                 backgroundColor="transparent" boxShadow="lg"
                 src= {MyImage} boxSize="200px"
             />

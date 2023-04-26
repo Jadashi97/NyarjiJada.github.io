@@ -60,12 +60,12 @@ const ContactMeSection = () => {
             p={16}
             spacing={8}
         >
-            <VStack w="1024px" //p={10} //alignItems="flex-start"
+            <VStack w="1024px" 
             >
                 <Heading as="h1" id="contactme-section" color={"white"}>
                     Contact me
                 </Heading>
-                <Box p={8} //rounded="lg" w="100%"
+                <Box p={8}
 
                 >
                     <form onSubmit={formik.handleSubmit} alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
