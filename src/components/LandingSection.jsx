@@ -2,10 +2,9 @@ import React from 'react';
 import { Image, Button, Heading, VStack, Text} from '@chakra-ui/react';
 import FullScreenSection from "./FullScreenSection";
 import { useMediaQuery } from '@chakra-ui/react';
-// import myAvatar from "../assets/myAvatar.jpeg";
-import AvatarPic from "../assets/AvatarPic.jpeg";
 import {DiJavascript1} from 'react-icons/di';
-import MyImage from "../assets/MyImage.jpeg";
+import newImage from "../assets/newImage.jpeg";
+// import MyImage from "../assets/MyImage.jpeg";
 import { AspectRatio } from '@chakra-ui/react';
 
 const greeting = "Hi 👋🏿!, I am Nyarji Daniel Jada";
@@ -27,9 +26,9 @@ const LandingSection = ()=> {
         <VStack spacing={16}>
             <VStack spacing={4} alignItems="center">
             <Image alignself="center" mt={isNotSmallerScreen ? "0" : "12"}
-                mb={isNotSmallerScreen ? "0" : "12"} borderradius='full'
+                mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
                 backgroundColor="transparent" boxShadow="lg"
-                src= {MyImage} boxSize="200px"
+                src= {newImage} boxSize="300px"
             />
 
                 <Heading flex="1" fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>
