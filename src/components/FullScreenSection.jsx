@@ -1,25 +1,23 @@
 import React from "react";
-import { VStack, Flex, useMediaQuery} from "@chakra-ui/react";
+import { VStack, Flex, useMediaQuery } from "@chakra-ui/react";
 
-/** 
-* Illustrates the use of children prop and spread operator 
-*/
-
+/**
+ * Illustrates the use of children prop and spread operator
+ */
 
 const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
+  const [isNotSmallerScreen] = useMediaQuery("(min-width: 200px)");
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width: 300px)");
-
-    return(
-        <VStack
-            backgroundColor={boxProps.backgroundColor}
-            color={isDarkBackground ? "white" : "black"}
-        >
-            <VStack maxWidth="1280px" minHeight='100vh' {...boxProps}>
-                {children}
-            </VStack>
-        </VStack>
-    );
+  return (
+    <VStack
+      backgroundColor={boxProps.backgroundColor}
+      //   color={isDarkBackground ? "white" : "black"}
+    >
+      <VStack maxWidth="1300px" minHeight="100vh" {...boxProps}>
+        {children}
+      </VStack>
+    </VStack>
+  );
 };
 
 export default FullScreenSection;
