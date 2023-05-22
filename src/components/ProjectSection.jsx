@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Netflix-Clone",
     description:
-      "Using React and Firebase to cement the front end and also spark the idea of providing streaming services to my beloved south Sudanese",
+      "Using React, TMDB(database) to work on the frontend and also spark the idea of providing streaming services to my beloved south Sudanese",
     myIcon: <RiNetflixFill color="red" size={120} />,
     getlinkSrc: () => "https://sollywoood-netflixclone.netlify.app/",
   },
