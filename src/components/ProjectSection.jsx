@@ -2,10 +2,9 @@ import React from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
-import { GiVolcano, GiTakeMyMoney } from "react-icons/gi";
+import { GiTakeMyMoney } from "react-icons/gi";
 import { RiNetflixFill } from "react-icons/ri";
 import { BsCurrencyExchange } from "react-icons/bs";
-import { MdOutlineFoodBank } from "react-icons/md";
 import { BiChurch } from "react-icons/bi";
 import { FcCalculator } from "react-icons/fc";
 
@@ -70,7 +69,6 @@ const ProjectSection = () => {
             description={project.description}
             myIcon={project.myIcon}
             linkSrc={project.getlinkSrc()}
-            // imageSrc={project.getImageSrc()}
           />
         ))}
       </Box>
