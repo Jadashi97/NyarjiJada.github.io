@@ -7,5 +7,5 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000 // Set the chunk size warning limit to 1 MB
   },
   plugins: [react()],
-  base: '/nyarjijada'
+  base: '/'
 })
