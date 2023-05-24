@@ -9,11 +9,8 @@ const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width: 200px)");
 
   return (
-    <VStack
-      backgroundColor={boxProps.backgroundColor}
-      //   color={isDarkBackground ? "white" : "black"}
-    >
-      <VStack maxWidth="1300px" minHeight="100vh" {...boxProps}>
+    <VStack backgroundColor={boxProps.backgroundColor}>
+      <VStack maxWidth="1000px" minHeight="100vh" {...boxProps}>
         {children}
       </VStack>
     </VStack>

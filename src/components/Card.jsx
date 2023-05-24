@@ -20,8 +20,6 @@ const Card = ({ title, description, myIcon, imageSrc, linkSrc }) => {
       mb={isNotSmallerScreen ? "0" : "12"}
       py={"2.0rem"}
     >
-      {/* <Icon color="black" p="4" as={myIcon} w="24" h="24"/> */}
-      {/* <Image borderRadius="xl" src={imageSrc} alt={title}/> */}
       <VStack spacing={4} p={2} alignItems="center">
         <p>{myIcon}</p>
         <HStack justifyContent="space-between" alignItems="center">

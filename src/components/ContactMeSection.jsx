@@ -26,7 +26,7 @@ const ContactMeSection = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
 
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)"); // for responsive design
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:200px)"); // for responsive design
 
   // we use formik to set up the input form
   const formik = useFormik({
@@ -76,6 +76,7 @@ const ContactMeSection = () => {
 
   return (
     <VStack
+      // maxWidth="1000px"
       alignSelf="center"
       mt={isNotSmallerScreen ? "0" : "12"}
       mb={isNotSmallerScreen ? "0" : "12"}

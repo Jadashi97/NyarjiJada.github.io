@@ -4,7 +4,6 @@ import FullScreenSection from "./FullScreenSection";
 import { useMediaQuery } from "@chakra-ui/react";
 import { DiJavascript1 } from "react-icons/di";
 import newImage from "../assets/newImage.jpeg";
-// import MyImage from "../assets/MyImage.jpeg";
 import { AspectRatio } from "@chakra-ui/react";
 
 const greeting = "Hi 👋🏿!, I am Nyarji Daniel Jada";
