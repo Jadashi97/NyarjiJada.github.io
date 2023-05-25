@@ -76,10 +76,9 @@ const ContactMeSection = () => {
 
   return (
     <VStack
-      // maxWidth="1000px"
       alignSelf="center"
-      mt={isNotSmallerScreen ? "0" : "12"}
-      mb={isNotSmallerScreen ? "0" : "12"}
+      // mt={isNotSmallerScreen ? "0" : "12"}
+      // mb={isNotSmallerScreen ? "0" : "12"}
       backgroundColor="transparent"
       boxShadow="full"
       background="#3f92ab"
@@ -87,15 +86,15 @@ const ContactMeSection = () => {
       p={16}
       spacing={8}
     >
-      <VStack w="1300px">
+      <VStack>
         <Heading as="h1" id="contactme-section" color={"white"}>
           Contact me
         </Heading>
         <Box
           p={8}
-          w={"3xl"}
-          //   mt={isNotSmallerScreen ? "0" : "12"}
-          //   mb={isNotSmallerScreen ? "0" : "12"}
+          w={"md"}
+          mt={isNotSmallerScreen ? "0" : "12"}
+          mb={isNotSmallerScreen ? "0" : "12"}
         >
           <form
             onSubmit={formik.handleSubmit}
