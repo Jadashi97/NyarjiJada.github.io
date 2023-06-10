@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Button, Heading, VStack, Text } from "@chakra-ui/react";
+import { Image, Button, Heading, VStack, Text, Flex } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import { useMediaQuery } from "@chakra-ui/react";
 import { DiJavascript1 } from "react-icons/di";
@@ -7,12 +7,12 @@ import newImage from "../assets/newImage.jpeg";
 import { AspectRatio } from "@chakra-ui/react";
 
 const greeting = "Hi 👋🏿!, I am Nyarji Daniel Jada";
-const bio1 = "A Proficient FullStack/FrontEnd Developer ";
+const bio1 = " A FrontEnd/ Aspiring FullStack developer ";
 const bio2 =
-  "Specialized in 👨🏾‍💻 ☕️ JavaScript, React, React Native, NodeJs, Express, Git & GIthub, Firebase, Figma,  MongoDB, MySQL, WordPress, Shopify";
+  "Specialized in 👨🏾‍💻 HTML, CSS, JavaScript, React, NextJs, NodeJs, Express, Git & GIthub, Firebase, Figma,  MongoDB, MySQL, WordPress, Shopify";
 
 const LandingSection = () => {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:300px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:400px)");
 
   return (
     <FullScreenSection
@@ -29,14 +29,15 @@ const LandingSection = () => {
             mb={isNotSmallerScreen ? "0" : "12"}
             borderRadius="full"
             backgroundColor="transparent"
-            boxShadow="lg"
+            boxShadow="full"
             src={newImage}
-            boxSize="300px"
+            boxSize="230px"
           />
 
           <Heading
             flex="1"
-            fontSize="5xl"
+            alignItem="center"
+            fontSize="4xl"
             fontWeight="bold"
             bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
             bgClip="text"
@@ -48,7 +49,7 @@ const LandingSection = () => {
           <Heading as="h5" size="2xl" noOfLines={4}>
             {bio1}
           </Heading>
-          <Text as="h2" size="5xl" noOfLines={5}>
+          <Text as="h3" size="5xl" noOfLines={5}>
             {bio2}
           </Text>
         </VStack>
