@@ -2,26 +2,27 @@ import React from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
+import { MdElectricRickshaw } from "react-icons/md";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { RiNetflixFill } from "react-icons/ri";
 import { BsCurrencyExchange } from "react-icons/bs";
 import { BiChurch } from "react-icons/bi";
-import { FcCalculator } from "react-icons/fc";
+// import { FcCalculator } from "react-icons/fc";
 
 const projects = [
+  {
+    title: "Ya-la",
+    description:
+      "Built a transport web app for Motorcycles and Rickshaw Riders to make money while giving Rides to passengers within Juba(South Sudan).",
+    myIcon: <MdElectricRickshaw color="Blue" size={120} />,
+    getlinkSrc: () => "https://uber-clone-jadashi97.vercel.app/",
+  },
   {
     title: "Expense Tracker",
     description:
       "A handy tracker to help me track my daily expenses.React for the frontend and nodejs for the backend",
     myIcon: <GiTakeMyMoney color="green" size={120} />,
     getlinkSrc: () => "https://tracking-expenditures.netlify.app/",
-  },
-  {
-    title: "Tip Calculator",
-    description:
-      "Built a Tip calculator that you can use to split the bill equally among a group of friends. Click the Link and try it yourself",
-    myIcon: <FcCalculator color="Green" size={120} />,
-    getlinkSrc: () => "https://personal-tippincalc.netlify.app/",
   },
   {
     title: "Netflix-Clone",
@@ -59,8 +60,8 @@ const ProjectSection = () => {
       </Heading>
       <Box
         display="grid"
-        // gridTemplateColumns="repeat(1,minmax(4,2fr))"
-        gridGap={10}
+        gridTemplateColumns="repeat(2,minmax(4,2fr))"
+        gridGap={4}
       >
         {projects.map((project) => (
           <Card
